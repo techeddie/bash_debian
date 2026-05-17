@@ -33,6 +33,9 @@ export TERM=linux
 export EDITOR='nvim'
 export VISUAL='nvim'
 
+# ── Zoxide ────────────────────────────────────────────────────────────────────
+eval "$(zoxide init bash)"
+
 # ── Restic ────────────────────────────────────────────────────────────────────
 source ~/.restic/env.s3-config
 
@@ -44,9 +47,6 @@ alias cd=z
 
 # ── fzf ───────────────────────────────────────────────────────────────────────
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# ── Zoxide ────────────────────────────────────────────────────────────────────
-eval "$(zoxide init bash)"
 
 # ── tmux auto-attach ──────────────────────────────────────────────────────────
 # Skip if already inside tmux, lf, or a Neovim terminal
